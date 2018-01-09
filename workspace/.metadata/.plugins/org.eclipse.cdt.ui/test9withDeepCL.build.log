@@ -1,0 +1,48 @@
+13:34:29 **** Incremental Build of configuration Default for project test9withDeepCL ****
+"C:\\Users\\olivier\\Desktop\\previous_computer\\adt-bundle-windows-x86_64-20140321\\crystax-ndk-10.2.1\\ndk-build.cmd" -j4 all 
+Android NDK: WARNING:jni/Android.mk:transferCL: LOCAL_LDFLAGS is always ignored for static libraries    
+Android NDK: WARNING:jni/Android.mk:transferCL: LOCAL_LDLIBS is always ignored for static libraries    
+Android NDK: WARNING:jni/Android.mk:transferCL: non-system libraries in linker flags: jni/../extra_libs/libOpenCL.so    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+Android NDK: WARNING:jni/Android.mk:transferCLNative: non-system libraries in linker flags: jni/../extra_libs/libOpenCL.so    
+Android NDK:     This is likely to result in incorrect builds. Try using LOCAL_STATIC_LIBRARIES    
+Android NDK:     or LOCAL_SHARED_LIBRARIES instead to list the library dependencies of the    
+Android NDK:     current module    
+[armeabi-v7a] Compile++ arm  : transferCLNative <= transferCLinterface.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= train.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= predict.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= PoolingLayer.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= PoolingBackwardGpuNaive.cpp
+In file included from jni/trainEngine/../TransferCL/src/TransferCL.h:6:0,
+                 from jni/trainEngine/train.cpp:11:
+jni/trainEngine/train.cpp: In member function 'void TrainModel::compare_two_binary_files(FILE*, FILE*)':
+jni/trainEngine/../TransferCL/src/dependencies.h:11:85: warning: format '%d' expects argument of type 'int', but argument 4 has type 'long int' [-Wformat=]
+ #define LOGI(...) ((void)__android_log_print(ANDROID_LOG_INFO, app_name, __VA_ARGS__))
+                                                                                     ^
+jni/trainEngine/train.cpp:776:9: note: in expansion of macro 'LOGI'
+         LOGI("Two files are not equal :  byte poistion at which two files differ is %d\n", ftell(fp1)+1);
+         ^
+[armeabi-v7a] Compile++ arm  : transferCL <= PoolingMaker.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= PoolingBackward.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= NeuralNet.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= TransferCL.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= SoftMaxLayer.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= LayerMaker.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= SGD.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= SGDMaker.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= ActivationLayer.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= ActivationMaker.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= ConvolutionalLayer.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= ConvolutionalMaker.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= Forward1.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= FullyConnectedMaker.cpp
+[armeabi-v7a] Compile++ arm  : transferCL <= FullyConnectedLayer.cpp
+[armeabi-v7a] Install        : libcrystax.so => libs/armeabi-v7a/libcrystax.so
+[armeabi-v7a] StaticLibrary  : libtransferCL.a
+[armeabi-v7a] SharedLibrary  : libtransferCLNative.so
+[armeabi-v7a] Install        : libtransferCLNative.so => libs/armeabi-v7a/libtransferCLNative.so
+
+13:35:11 Build Finished (took 41s.847ms)
+
