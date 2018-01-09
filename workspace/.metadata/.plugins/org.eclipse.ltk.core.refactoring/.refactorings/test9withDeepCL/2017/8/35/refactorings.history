@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete 2 elements from project &apos;test9withDeepCL&apos;&#x0D;&#x0A;- Original project: &apos;test9withDeepCL&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Eigen&#x0D;&#x0A;     unsupported" description="Delete elements" element1="jni/Eigen" element2="jni/unsupported" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="2" stamp="1504054924807" subPackages="false" version="1.0"/>
-</session>

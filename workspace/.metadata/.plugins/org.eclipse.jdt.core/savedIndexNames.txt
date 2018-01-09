@@ -1,7 +1,0 @@
-INDEX VERSION 1.126+C:\Users\olivier\workspaceTranferCLlite4\.metadata\.plugins\org.eclipse.jdt.core
-575793867.index
-3285295141.index
-3241864218.index
-972106631.index
-410716145.index
-570265304.index
